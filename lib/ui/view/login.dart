@@ -22,12 +22,16 @@ class Login extends StatelessWidget {
           SizedBox(height: 70),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 60),
-            child: TextField(),
+            child: TextField(
+              decoration: InputDecoration(hintText: 'id'),
+            ),
           ),
           SizedBox(height: 40),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 60),
-            child: TextField(),
+            child: TextField(
+              decoration: InputDecoration(hintText: 'password'),
+            ),
           ),
           SizedBox(height: 150),
           Container(
