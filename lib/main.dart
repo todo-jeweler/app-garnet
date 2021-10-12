@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Color(0xffEB98FF),
         primarySwatch: Colors.purple,
       ),
-      home: Hello(),
+      home: Login(),
     );
   }
 }

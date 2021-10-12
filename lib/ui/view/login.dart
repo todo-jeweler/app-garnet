@@ -23,14 +23,30 @@ class Login extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 60),
             child: TextField(
-              decoration: InputDecoration(hintText: 'id'),
+              decoration: InputDecoration(
+                hintText: '이메일',
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.purpleAccent, width: 3),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.purple, width: 3),
+                ),
+              ),
             ),
           ),
           SizedBox(height: 40),
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 60),
             child: TextField(
-              decoration: InputDecoration(hintText: 'password'),
+              decoration: InputDecoration(
+                hintText: '비밀번호',
+                enabledBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.purpleAccent, width: 3),
+                ),
+                focusedBorder: UnderlineInputBorder(
+                  borderSide: BorderSide(color: Colors.purple, width: 3),
+                ),
+              ),
             ),
           ),
           SizedBox(height: 150),
@@ -48,15 +64,26 @@ class Login extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 20),
+          SizedBox(height: 30),
           Container(
             width: 280,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('아직 계정이 없으신가요? 회원가입'),
-                Text('비밀번호가 기억이 나지 않아요.'),
+                Row(
+                  children: [
+                    Text('아직 계정이 없으신가요? '),
+                    Text('회원가입', style: TextStyle(fontWeight: FontWeight.bold))
+                  ],
+                ),
+                SizedBox(height: 5),
+                Row(
+                  children: [
+                    Text('비밀번호', style: TextStyle(fontWeight: FontWeight.bold)),
+                    Text('가 기억이 나지 않아요.')
+                  ],
+                ),
               ],
             ),
           ),
