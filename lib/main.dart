@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_jeweler/ui/view/login.dart';
+import 'package:todo_jeweler/ui/view/register.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Color(0xffEB98FF),
         primarySwatch: Colors.purple,
       ),
-      home: Login(),
+      home: Register(),
     );
   }
 }
@@ -54,6 +55,6 @@ class Hello extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Login();
+    return Register();
   }
 }
